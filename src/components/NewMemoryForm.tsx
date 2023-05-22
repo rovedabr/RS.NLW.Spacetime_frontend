@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation'
 export function NewMemoryForm() {
   const router = useRouter()
 
-  function handleCreateMemory(event: FormEvent<HTMLFormElement>) {
+  async function handleCreateMemory(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
 
     const formData = new FormData(event.currentTarget)
@@ -32,8 +32,8 @@ export function NewMemoryForm() {
     const token = Cookie.get('token')
 
     await api.post(
-      '/memories', 
-      {  
+      '/memories',
+      {
         coverUrl,
         content: formData.get('content'),
         isPublic: formData.get('isPublic'),
@@ -42,7 +42,7 @@ export function NewMemoryForm() {
         headers: {
           Authorization: `Bearer ${token}`,
         },
-      }
+      },
     )
 
     router.push('/')
@@ -92,7 +92,3 @@ export function NewMemoryForm() {
     </form>
   )
 }
-
-}
-
-  
