@@ -1,26 +1,58 @@
-## Getting Started
+# Spacetime - Projeto Ignite
 
-First, run the development server:
+## Descrição
+Guarde suas memórias em uma linha de tempo. Aplicação mobile e Web, juntamente com o back-end utilizando o OAuth de autenticação do Github. Projeto desenvolvido pela Rocketseat como desafio da trilha Ignite.
+
+## Imagem
+![image](https://github.com/rovedabr/RS.NLW.Spacetime_frontend/assets/118762335/ab9bac72-452f-4fc7-96ac-d98a7f1bfad6)
+
+## Tecnologias
+- React
+- Next
+- TypeScript
+- JavaScript
+- TailwindCSS
+- Axios
+- Lucide Prisma
+- Zod
+- Fastfy
+- Expo
+
+## Início
+
+Primeiro clone o projeto:
+
+*Front-end*
+```bash
+git clone https://github.com/rovedabr/RS.NLW.Spacetime_frontend.git
+```
+
+*Back-end*
+```bash
+git clone https://github.com/rovedabr/RS.NLW.Spacetime_backend.git
+```
+
+*Mobile*
+```bash
+git clone https://github.com/rovedabr/mobile.git
+```
+
+Intale as dependências 
+
+```bash
+npm i
+```
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para criar o banco de dados pelo Prisma execute:
+```bash
+npx prisma migrate dev
+```
 
-## Learn More
+Abra o endereço do localhost em seu navegador. Para o Mobile você poderá usar o Expo GO escaneando o QR Code ou emulador instalado. Dentro do JSON se encontram os cripst para rodar as aplciações em diferentes modos.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licença 
+Esse projeto está sob a licença MIT.
